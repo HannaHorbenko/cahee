@@ -4,74 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Cahee</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header>
+        <div class="header container">
+            <a href="#" class="logo">Cahee</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__btn">
+                        <a class="nav__link" href="#">home</a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="#about-us">about</a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="#">services</a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="#">gallery</a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="#blog">blog</a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <section class="blog">
+        <section class="main">
             <div class="container">
-                <div class="container container--sm">
-                    <h1>Blog</h1>
-                    <p class="text-main">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                <div class="home">
+                    <h1 class="home__title">Fresh Life</h1>
+                    <p class="home__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="btn">GET FREE NOW</a>
+                </div>
+                <div class="scroll-wrap">
+                    <a href="#about-us" class="scroll">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="box about-us" id="about-us">
+            <div class="about container">
+                <div class="about__img"><img src="img/incups.png" alt="berry in cup"></div>
+                <div class="about-block">
+                    <h2 class="block__title">About Us</h2>
+                    <p class="block__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum.</p>
+                    <p class="block__text">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
+            </div>
+        </section>
+        <section class="box blog" id="blog">
+            <div class="container">
+                <div class="blog-block">
+                    <h2 class="block__title">Blog</h2>
+                    <p class="block__text tac">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
                         laboris nisi ut
                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                 </div>
-                <ul class="content">
-                    <li class="article">
-                        <div class="article__img"><a href="#" target="_blank"><img src="img/green-smoothies.jpg"
-                                    alt="green"></a></div>
-                        <time class="article__data">
-                            <div class="day">20</div>
-                            <div class="month">nov</div>
-                        </time>
-                        <div class="article__name">
-                            <a href="#" target="_blank">Green Smoothies: Too Much of a Good
-                                Thing?</a>
-                        </div>
-                        <div class="article__post">
-                            <span class="post__author">By Auskteez</span>
-                            <time class="post__date">2 hours ago</time>
-                        </div>
-                    </li>
-                    <li class="article">
-                        <div class="article__img"><a href="#" target="_blank"><img src="img/growing-food.jpg"
-                                    alt="growing"></a></div>
-                        <time class="article__data">
-                            <div class="day">14</div>
-                            <div class=" month">nov</div>
-                        </time>
-                        <div class="article__name">
-                            <a href="#" target="_blank">Growing Food and a “Thirst” for Innovation</a>
-                        </div>
-                        <div class="article__post">
-                            <span class="post__author">By Auskteez</span>
-                            <time class="post__date">3 hours ago</time>
-                        </div>
-                    </li>
-                    <li class="article">
-                        <div class="article__img"><a href="#" target="_blank"><img src="img/berry.jpg" alt="berry"></a>
-                        </div>
-                        <time class="article__data">
-                            <div class="day">10</div>
-                            <div class=" month">nov</div>
-                        </time>
-                        <div class="article__name"><a href="#" target="_blank">Pesticides & Food: What You Need to
-                                Know</a></div>
-                        <div class="article__post">
-                            <span class="post__author">By Auskteez</span>
-                            <time class="post__date">6 hours ago</time>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#" class="btn">VIEW MORE</a>
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__article">
+                            <div class="article__img"><a href="#" target="_blank"><img src="img/green-smoothies.jpg"
+                                        alt="green"></a></div>
+                            <time class="article__data">
+                                <div class="day">20</div>
+                                <div class="month">nov</div>
+                            </time>
+                            <div class="article__name">
+                                <a href="#" target="_blank">Green Smoothies: Too Much of a Good
+                                    Thing?</a>
+                            </div>
+                            <div class="article__post">
+                                <span class="post__author">By Auskteez</span>
+                                <time class="post__date">2 hours ago</time>
+                            </div>
+                        </li>
+                        <li class="nav__article">
+                            <div class="article__img"><a href="#" target="_blank"><img src="img/growing-food.jpg"
+                                        alt="growing"></a></div>
+                            <time class="article__data">
+                                <div class="day">14</div>
+                                <div class=" month">nov</div>
+                            </time>
+                            <div class="article__name">
+                                <a href="#" target="_blank">Growing Food and a “Thirst” for Innovation</a>
+                            </div>
+                            <div class="article__post">
+                                <span class="post__author">By Auskteez</span>
+                                <time class="post__date">3 hours ago</time>
+                            </div>
+                        </li>
+                        <li class="nav__article">
+                            <div class="article__img"><a href="#" target="_blank"><img src="img/pesticed.jpg"
+                                        alt="berry"></a>
+                            </div>
+                            <time class="article__data">
+                                <div class="day">10</div>
+                                <div class=" month">nov</div>
+                            </time>
+                            <div class="article__name"><a href="#" target="_blank">Pesticides & Food: What You Need to
+                                    Know</a></div>
+                            <div class="article__post">
+                                <span class="post__author">By Auskteez</span>
+                                <time class="post__date">6 hours ago</time>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--red">VIEW MORE</a>
+                </div>
             </div>
         </section>
     </main>
-
 </body>
 
 </html>
