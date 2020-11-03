@@ -32,7 +32,7 @@
                         <a class="nav__link" href="#blog">blog</a>
                     </li>
                     <li class="nav__btn">
-                        <a class="nav__link" href="#">contact</a>
+                        <a class="nav__link" href="#contact">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -72,7 +72,7 @@
         </section>
         <section class="box blog" id="blog">
             <div class="container">
-                <div class="blog-block">
+                <div class="block">
                     <h2 class="block__title">Blog</h2>
                     <p class="block__text tac">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco
@@ -132,7 +132,49 @@
                 </div>
             </div>
         </section>
+        <section class="box contact" id="contact">
+            <div class="container">
+                <div class="block">
+                    <h2 class="block__title">Contact</h2>
+                    <p class="block__text tac">For new projects, ideas, business or anything<br>
+                        you'd like to discuss, contact with me!</p>
+                </div>
+                <div class="flex-wrap">
+                    <div class="form-wrap">
+                        <form action="" method="POST" class="form" id="comment">
+                            <input class="form__input" type="text" name="username" placeholder="Username" form="comment" autocomplete="off" required>
+                            <input class="form__input" type="email" name="email" placeholder="Your email..." form="comment" autocomplete="off" required>
+                            <input class="form__input" type="tel" name="tel" placeholder="Your phone number..." form="comment" autocomplete="off" required>
+                            <textarea  class="form__input" form="comment" name="comment" rows="5" maxlength="100" autocomplete="off" required>Your message...
+                            </textarea>
+                            <input class="form__submit" type="submit">
+                        </form>
+                    </div>
+                    <div class="adress-wrap">
+                        <div class="adress">
+                            <p class="adress__title">ADDRESS</p>
+                            <p class="adress__content">123 City name, Street, City, Country</p>
+                        </div>
+                        <div class="adress">
+                            <p class="adress__title">EMAIL</p>
+                            <p class="adress__content">cahee@domain.com</p>
+                        </div>
+                        <div class="adress">
+                            <p class="adress__title">PHONE</p>
+                            <p class="adress__content">+012 345 6789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <span class="footer__text">&#169; 2015 Company. All right reserved.</span>
+            <a href="#" class="logo logo--sm">Cahee</a>
+            <span class="footer__text">Made with <strong>love</strong> by Auskteez</span>
+        </div>
+    </footer>
 </body>
 
 </html>
