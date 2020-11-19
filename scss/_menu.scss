@@ -1,0 +1,57 @@
+
+@media screen and (max-width: 768px) {
+    // .logo {
+    //     font-size: 42px;
+    // }
+
+    
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        background-color: #e71cb4;
+        display: flex;
+        
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translate(-100%, 0);
+        opacity: 0;
+        transition: all .3s ease-in-out;   
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 10px 25px 10px;
+        font-weight: 700;
+        font-size: 24px;
+        border-bottom: 1px solid #fff;
+        color: rgba(255,255,255, .7);
+    }
+
+    nav ul li:first-child a {
+        border-top: 1px solid #fff;
+    }
+
+    nav ul li a:hover, 
+    nav ul li a:focus, 
+    nav ul li a:active {
+        color:  rgba(255,255,255, 1);
+        border-bottom-color: #fff;
+    }
+
+    
+
+}
