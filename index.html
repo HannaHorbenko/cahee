@@ -60,8 +60,9 @@
             </div>
         </section>
         <section class="section section--bgi" id="about">
-            <div class="container">
-                <div class="block block--light block--right">
+            <div class="container about-wrap">
+                <div></div>
+                <div class="block block--light">
                     <h2 class="block__title">About Us</h2>
                     <p class="block__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation
@@ -129,46 +130,49 @@
                     <p class="block__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <div class="gallery-wrap">
-                    <div class="gallery gallery--lg">
-                        <picture>
-                            <source class="gallery__img" media="(max-width: 992px)" srcset="img/1-sm.jpg">
-                            <source class="gallery__img" media="(max-width: 1199px)" srcset="img/1-md.jpg">
-                            <source class="gallery__img" media="(min-width: 1200px)" srcset="img/1-lg.jpg">
-                            <img src="img/1.jpg">
-                        </picture>
-                    </div>
-                    <div class="gallery-wrap gallery-wrap--row">
-                        <div class="gallery gallery--sm">
-                            <picture>
-                                <source class="gallery__img" media="(max-width: 992px)" srcset="img/2-sm.jpg">
-                                <!-- <source class="gallery__img" media="(min-width: 1075px)" srcset="img/4-lg.jpg"> -->
-                                <img src="img/2.jpg">
-                            </picture>
-                        </div>
-                        <div class="gallery gallery--sm">
-                            <picture>
-                                <source class="gallery__img" media="(max-width: 992px)" srcset="img/3-sm.jpg">
-                                <!-- <source class="gallery__img" media="(min-width: 1075px)" srcset="img/4-lg.jpg"> -->
-                                <img src="img/3.jpg"> 
+                    <div class="col col--1-2 col--lg">
+                        <div class="gallery gallery--lg">
+                            <picture class="gallery__img ">
+                                <!-- <source media="(max-width: 576px)" srcset="img/1-sm"> -->
+                                <source media="(min-width: 577px)" srcset="img/1.jpg">
+                                <img src="img/1.jpg">
                             </picture>
                         </div>
                     </div>
-                    <div class="gallery">
-                        <picture>
-                            <source class="gallery__img" media="(max-width: 1074px)" srcset="img/4-md.jpg">
-                            <source class="gallery__img" media="(min-width: 1075px)" srcset="img/4-lg.jpg">
-                            <img src="img/4.jpg">
-                        </picture>
+                    <div class="col col--1-2 col--sm">
+                        <div class="gallery-wrap gallery-wrap--row">
+                            <div class="gallery gallery--sm">
+                                <picture class="gallery__img ">
+                                    <source media="(max-width: 1199px)" srcset="img/2.jpg">
+                                    <img src="img/2.jpg">
+                                </picture>
+                            </div>
+                            <div class="gallery gallery--sm">
+                                <picture class="gallery__img ">
+                                    <source media="(max-width: 1199px)" srcset="img/3.jpg">
+                                    <img src="img/3.jpg">
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-                    <div class="gallery">
-                        <picture>
-                            <source class="gallery__img" media="(max-width: 1074px)" srcset="img/5-md.jpg">
-                            <source class="gallery__img" media="(min-width: 1075px)" srcset="img/5-lg.jpg">
-                            <img src="img/5.jpg">
-                        </picture>
+                    <div class="col col--1-2">
+                        <div class="gallery">
+                            <picture class="gallery__img ">
+                                <source media="(max-width: 1199px)" srcset="img/4.jpg">
+                                <img src="img/4.jpg">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col col--1-2">
+                        <div class="gallery">
+                            <picture class="gallery__img ">
+                                <source media="(max-width: 1199px)" srcset="img/5.jpg">
+                                <img src="img/5.jpg">
+                            </picture>
+                        </div>
                     </div>
                 </div>   
-                    <a href="#" class="btn btn--blue">VIEW MORE</a>
+                <a href="#" class="btn btn--blue">VIEW MORE</a>
             </div>
         </section>
         <section class="section section--bgi" id="subscribe-form">
@@ -193,48 +197,54 @@
                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                 </div>
                 <div class="article-wrap">
-                    <div class="article">
-                        <img class="article__img" src="img/green-smoothies.jpg">
-                        <time class="article__data">
-                            <div class="day">20</div>
-                            <div class="month">nov</div>
-                        </time>
-                        <div class="article__name">
-                            <a href="#" target="_blank">Green Smoothies: Too Much of a Good
-                                Thing?</a>
-                        </div>
-                        <div class="article__post">
-                            <span class="post__author">By Auskteez</span>
-                            <time class="post__date">2 hours ago</time>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <img class="article__img" src="img/growing-food.jpg">
-                        <time class="article__data">
-                            <div class="day">14</div>
-                            <div class=" month">nov</div>
-                        </time>
-                        <div class="article__name">
-                            <a href="#" target="_blank">Growing Food and a “Thirst” for Innovation</a>
-                        </div>
-                        <div class="article__post">
-                            <span class="post__author">By Auskteez</span>
-                            <time class="post__date">3 hours ago</time>
+                    <div class="col">
+                        <div class="article">
+                            <img class="article__img" src="img/green-smoothies.jpg">
+                            <time class="article__data">
+                                <div class="day">20</div>
+                                <div class="month">nov</div>
+                            </time>
+                            <div class="article__name">
+                                <a href="#" target="_blank">Green Smoothies: Too Much of a Good
+                                    Thing?</a>
+                            </div>
+                            <div class="article__post">
+                                <span class="post__author">By Auskteez</span>
+                                <time class="post__date">2 hours ago</time>
+                            </div>
                         </div>
                     </div>
-                    <div class="article">
-                        <img class="article__img" src="img/pesticides-food.jpg">
-                        <time class="article__data">
-                            <div class="day">10</div>
-                            <div class=" month">nov</div>
-                        </time>
-                        <div class="article__name"><a href="#" target="_blank">Pesticides & Food: What You Need to
-                                Know</a></div>
-                        <div class="article__post">
-                            <span class="post__author">By Auskteez</span>
-                            <time class="post__date">6 hours ago</time>
+                    <div class="col">
+                        <div class="article">
+                            <img class="article__img" src="img/growing-food.jpg">
+                            <time class="article__data">
+                                <div class="day">14</div>
+                                <div class=" month">nov</div>
+                            </time>
+                            <div class="article__name">
+                                <a href="#" target="_blank">Growing Food and a “Thirst” for Innovation</a>
+                            </div>
+                            <div class="article__post">
+                                <span class="post__author">By Auskteez</span>
+                                <time class="post__date">3 hours ago</time>
+                            </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="article">
+                            <img class="article__img" src="img/pesticides-food.jpg">
+                            <time class="article__data">
+                                <div class="day">10</div>
+                                <div class=" month">nov</div>
+                            </time>
+                            <div class="article__name"><a href="#" target="_blank">Pesticides & Food: What You Need to
+                                    Know</a></div>
+                            <div class="article__post">
+                                <span class="post__author">By Auskteez</span>
+                                <time class="post__date">6 hours ago</time>
+                            </div>
+                        </div>
+                    </div>                                                      
                 </div>
                 <a href="#" class="btn btn--red">VIEW MORE</a>    
             </div>
