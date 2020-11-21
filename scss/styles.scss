@@ -20,11 +20,6 @@ html {
         font-size: 8px;
     }
 }
-@media screen and (max-width: 320px) {
-    html {
-        font-size: 5px;
-    }
-}
 
 body {
     font: 300 1.7rem/1.7 $ff;
@@ -50,7 +45,6 @@ body {
 }
 @media screen and (max-width: 768px) {
     .section {
-        padding: 90px 0;
         &--pd-sm {
             padding: 30px 0;
         }
@@ -66,7 +60,6 @@ header {
     right: 0; 
     .header-wrap {
         display: flex;
-        // align-items: center;
         justify-content: space-between;
         #toggler, #toggler-input {
             display: none;
@@ -186,6 +179,7 @@ header {
 
 .logo {
     font: 400 5rem $ff-logo;
+    padding: 0 15px;
     @include hover {
         color: #ff6033; 
     } 
@@ -208,10 +202,16 @@ header {
     width: 600px;
     max-width: 50%;
     padding: 0 15px;
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
+    }
     &--sm {
         max-width: 33%;
         width: 400px;
         padding: 0 15px;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
     }
     &--light {
         color: $light;
@@ -232,7 +232,7 @@ header {
         margin: 20px 0;
         line-height: 1;
     }
-    @media screen and (max-width: 1074px) {
+    @media screen and (max-width: 768px) {
         &__title {
             font-size: 7rem;
             }
@@ -252,7 +252,6 @@ header {
     margin: 30px 0;
     display: inline-block;
     width: 200px;
-    // max-width: 55%;
     text-align: center; 
     box-shadow: $shadow-btn;
     text-transform: uppercase;
@@ -263,17 +262,15 @@ header {
     &--blue {
         background-color: #5585a2;
         border: 2px solid #5585a2;
-        // padding: 15px 40px;
         @include hover {
             border: 2px solid #5585a2;
         }
     }
     &--green {
-        max-width: 15%;
         width: 170px;
         padding: 17px 0;
         outline: 0;
-        margin: 0 30px;
+        margin: 0 15px;
         border: 2px solid #96b92c;
         background-color: #96b92c;
         @include hover {
@@ -285,7 +282,6 @@ header {
         border: 2px solid #f72b3b;
         @include hover {
             border: 2px solid #f72b3b;
-            // color: $dark;
         }
     }  
 }
@@ -312,10 +308,13 @@ header {
         justify-content: space-between;
     }
 }
-@media screen and (max-width: 576px) {
-    h2 {
-        text-align: center;
-    }
+@media screen and (max-width: 576px) { 
+    #about {
+        background-image: url(../img/bg-about-gradi.jpg);
+        h2 {
+            text-align: center;
+        }
+    }   
 }
 
 #services {
@@ -354,7 +353,6 @@ header {
                     height: 100%;
                     width: 100%;
                     position: relative;
-                    // padding: 25px;
 
                     svg {
                         margin: 25px;         
@@ -376,12 +374,16 @@ header {
     #services {
         background-color: #70bfff; 
         background-image: none;
+        padding: 30px 0;
         .services-wrap {
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
             h2 {
                 text-align: center;
+            }
+            .services {
+                max-width: 100%;
             }
 
         }
@@ -436,8 +438,8 @@ header {
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
+                width: 100%;
+                height: 100%;
             }
         }   
     }
@@ -455,13 +457,23 @@ header {
         &__input {
             outline: 0;
             border: 1px solid rgba(38,38,38, .5);
-            max-width: 49%;
             width: 570px;
             padding: 20px 10px;
             margin: 15px;
             @include hover {
                 border: 1px solid rgba(38,38,38, 1);
             } 
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    #subscribe-form {
+        padding: 50px 0;
+    }
+    .subscribe {
+        &__input {
+            display: block;
+            max-width: 80%;
         }
     }
 }
@@ -473,7 +485,6 @@ header {
     .block {
         margin: 0 auto;
     }
-    
     .article-wrap {
         display: flex;
         justify-content: space-between;
@@ -486,20 +497,21 @@ header {
             .col {
                 width: calc(100% - 15px * 2);
                 margin: 15px;
+
             }
-        }
-                
+        }       
         .article {
             width: 100%;
-            padding-top: 100%;
+            padding-top: 80%;
             position: relative;
             overflow: hidden;
             @include hover {
                 box-shadow: $shadow; 
             }  
             &__img {
-                min-width: 100%;
-                min-height: 100%;
+                display: block;
+                width: 100%;
+                height: 100%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -549,24 +561,24 @@ header {
                 padding: 10px 20px;
                 position: absolute;
                 z-index: 1;
-                bottom: 40px;
+                bottom: 10%;
                 @include hover {
                     text-decoration-line: underline; 
                 }
             }
+            
             &__post {
                 font-style: 1.3rem;
                 padding: 10px 20px;
                 position: absolute;
                 z-index: 1;
-                bottom: 10px;
+                bottom: 0;
                 .post__author:not(:empty) + .post__date:not(:empty):before {
                     content: '-';
                 }
             }
         }        
-    }
-    
+    } 
 }
 
 #contact {
@@ -579,9 +591,9 @@ header {
     .contact-wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .form {
             width: 500px;
-            max-width: 42%;
             &__input {
                 width: 100%;
                 margin: 15px 0;
